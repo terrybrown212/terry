@@ -1,0 +1,57 @@
+{
+  "name": "sergix44/xbackbone",
+  "license": "AGPL-3.0-only",
+  "version": "3.5.1",
+  "description": "A lightweight ShareX PHP backend",
+  "type": "project",
+  "require": {
+    "php": ">=7.2",
+    "ext-gd": "*",
+    "ext-intl": "*",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-zip": "*",
+    "ext-filter": "*",
+    "erusev/parsedown": "^1.7",
+    "guzzlehttp/psr7": "^1.6",
+    "http-interop/http-factory-guzzle": "^1.0",
+    "intervention/image": "^2.6",
+    "league/flysystem": "^1.1.4",
+    "league/flysystem-aws-s3-v3": "^1.0",
+    "league/flysystem-azure-blob-storage": "^0.1.6",
+    "maennchen/zipstream-php": "^2.0",
+    "monolog/monolog": "^1.23",
+    "php-di/slim-bridge": "^3.0",
+    "slim/slim": "^4.0",
+    "spatie/flysystem-dropbox": "^1.0",
+    "superbalist/flysystem-google-storage": "^7.2",
+    "twig/twig": "^2.14"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "platform": {
+      "php": "7.2.34"
+    }
+  },
+  "autoload": {
+    "files": [
+      "app/helpers.php"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpstan/phpstan": "^0.11.5",
+    "phpunit/phpunit": "^8.5",
+    "symfony/dom-crawler": "^4.4"
+  }
+}
